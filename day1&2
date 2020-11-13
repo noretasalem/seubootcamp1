@@ -1,0 +1,23 @@
+//Convert from C degrees to F degrees 
+
+x=int(input("Please enter the degrees in Celius: ")) 
+print( x," degrees Celius is equall to ", x * 9/5 +32 , " degrees Fahrenheit") 
+
+//-----------------
+
+//how much Payment plus tax 
+
+p = int(input("Please enter the price of the product")) 
+print("The product price plus VAT tax is ", p * 0.15 + p) 
+
+
+//------------------
+
+//How many school days this year ?
+
+term = int(input("how many months of school year?")) 
+print("There are", term *30 , "days or", term *30*24 , "hours or", term*30*24*60, "minutes in a school year")
+
+//------------------
+
+//guess a number
