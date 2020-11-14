@@ -21,3 +21,36 @@ print("There are", term *30 , "days or", term *30*24 , "hours or", term*30*24*60
 //------------------
 
 //guess a number
+
+import random
+mynum = random.randint(0,10)
+count = 1
+x = int(input("please enter a number between 0 and 10: "))
+
+while x != mynum and count < 3:
+    if x > mynum:
+        print("too high")
+    else: 
+        print("too low")
+    x = int(input("please enter a number between 0 and 10: "))
+    count +=1
+    
+if x == mynum:
+    print("correct you've guessed right!", mynum)
+else: 
+    print("Game over! The right number is:", mynum)
+print ("After", count, "tries")
+
+/-------------------
+
+//Python turtle
+
+import turtle
+x = 0
+turtle.shape('turtle')
+for x in range(60):
+    for i in range(4):
+        turtle.forward(100+x)
+        turtle.right(90)
+    turtle.right(5)
+    x +=20
